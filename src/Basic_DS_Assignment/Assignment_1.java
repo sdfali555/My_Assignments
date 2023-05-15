@@ -1,9 +1,5 @@
 package Basic_DS_Assignment;
-
 import java.util.*;
-
-
-
 class ArmstrongOrNot{
     public boolean armstrongCheck(int num){
         int temp = num;

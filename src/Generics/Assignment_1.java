@@ -23,9 +23,12 @@ class Contact
         this.eMail=eMail;
         this.gender=gender;
     }
-    public String getDetails(Contact contact)
-    {
-        return contact.phoneNumber+" "+contact.name+" "+contact.eMail+" "+contact.gender;
+   // public String getDetails(Contact contact)
+   // {
+       // return contact.phoneNumber+" "+contact.name+" "+contact.eMail+" "+contact.gender;
+    //}
+    public String toString(){
+        return phoneNumber+" "+name+" "+eMail+" "+gender;
     }
 }
 public class Assignment_1
@@ -60,7 +63,8 @@ public class Assignment_1
         Collections.sort(list,c1);
         for(Contact l:list)
         {
-            System.out.println(obj.getDetails(map.get(l.phoneNumber)));
+            //System.out.println(obj.getDetails(map.get(l.phoneNumber)));
+           System.out.println(map.get(l.phoneNumber));
         }
     }
 }
